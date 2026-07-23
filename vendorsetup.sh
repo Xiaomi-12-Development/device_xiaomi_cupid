@@ -62,3 +62,12 @@ else
         echo "=> [INFO] Installation skipped."
     fi
 fi
+
+CONFIG_FILE="kernel/xiaomi/sm8450/arch/arm64/configs/vendor/waipio_GKI.config"
+
+if ! grep -q "CONFIG_LOCALVERSION_AUTO" "$CONFIG_FILE"; then
+    echo "=> [INFO] Adding LOCALVERSION_AUTO to config."
+    echo "# CONFIG_LOCALVERSION_AUTO is not set" >> "$CONFIG_FILE"
+else
+    echo "=> [INFO] LOCALVERSION_AUTO setting already exists, skipping."
+fi
