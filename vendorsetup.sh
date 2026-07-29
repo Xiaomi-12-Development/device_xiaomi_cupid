@@ -3,14 +3,14 @@
         echo "=> [INFO] Checking repos."
 # Repository list
 REPOS=(
-    "https://github.com/Xiaomi-12-Development/device_xiaomi_sm8450-common device/xiaomi/sm8450-common 16.0"
+    "https://github.com/Xiaomi-12-Development/device_xiaomi_sm8450-common device/xiaomi/sm8450-common 17.0"
+    "https://github.com/Xiaomi-12-Development/vendor_xiaomi_sm8450-common vendor/xiaomi/sm8450-common 17.0"
     "https://github.com/LineageOS/android_kernel_xiaomi_sm8450 kernel/xiaomi/sm8450 lineage-23.2"
     "https://github.com/LineageOS/android_kernel_xiaomi_sm8450-modules kernel/xiaomi/sm8450-modules lineage-23.2"
     "https://github.com/LineageOS/android_kernel_xiaomi_sm8450-devicetrees kernel/xiaomi/sm8450-devicetrees lineage-23.2"
     "https://github.com/TheMuppets/proprietary_vendor_xiaomi_cupid vendor/xiaomi/cupid lineage-23.2"
-    "https://github.com/TheMuppets/proprietary_vendor_xiaomi_sm8450-common vendor/xiaomi/sm8450-common lineage-23.2"
-    "https://github.com/Evolution-X-Devices/hardware_xiaomi/ hardware/xiaomi bka-no-dolby"
-    "https://github.com/Evolution-X-Devices/hardware_dolby hardware/dolby bka-aospa"
+    "https://github.com/Evolution-X-Devices/hardware_xiaomi/ hardware/xiaomi cnb-no-dolby"
+    "https://github.com/Evolution-X-Devices/hardware_dolby hardware/dolby cnb-aospa"
 )
 
 # Cloning repositories

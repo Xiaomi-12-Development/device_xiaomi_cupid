@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_cupid.mk
+    $(LOCAL_DIR)/lineage_cupid.mk
