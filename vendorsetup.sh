@@ -35,10 +35,10 @@ KSU_DIR="kernel/xiaomi/sm8450/KernelSU-Next"
 if [ -d "$KSU_DIR" ]; then
     echo "=> [INFO] KernelSU-Next directory detected."
     
-    # Update to withKSU if it's the original setting
+    # Update to withKSUNext if it's the original setting
     if grep -q 'CONFIG_LOCALVERSION="-gki"' "$CONFIG_FILE"; then
-        sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withKSU"/' "$CONFIG_FILE"
-        echo "=> [CONFIG] Updated LOCALVERSION to -gki_withKSU"
+        sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withKSUNext"/' "$CONFIG_FILE"
+        echo "=> [CONFIG] Updated LOCALVERSION to -gki_withKSUNext"
     fi
 else
     # Prompt the user
@@ -50,14 +50,14 @@ else
         
         # Update config after installation
         if grep -q 'CONFIG_LOCALVERSION="-gki"' "$CONFIG_FILE"; then
-            sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withKSU"/' "$CONFIG_FILE"
-            echo "=> [CONFIG] Updated LOCALVERSION to -gki_withKSU"
+            sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withKSUNext"/' "$CONFIG_FILE"
+            echo "=> [CONFIG] Updated LOCALVERSION to -gki_withKSUNext"
         fi
     else
-        # If user declines, update to withoutKSU
+        # If user declines, update to withoutKSUNext
         if grep -q 'CONFIG_LOCALVERSION="-gki"' "$CONFIG_FILE"; then
-            sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withoutKSU"/' "$CONFIG_FILE"
-            echo "=> [CONFIG] Updated LOCALVERSION to -gki_withoutKSU"
+            sed -i 's/CONFIG_LOCALVERSION="-gki"/CONFIG_LOCALVERSION="-gki_withoutKSUNext"/' "$CONFIG_FILE"
+            echo "=> [CONFIG] Updated LOCALVERSION to -gki_withoutKSUNext"
         fi
         echo "=> [INFO] Installation skipped."
     fi
