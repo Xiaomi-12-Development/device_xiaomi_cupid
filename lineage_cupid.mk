@@ -10,6 +10,10 @@ $(call inherit-product, device/xiaomi/cupid/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Evolutio-X Flags
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := lineage_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
